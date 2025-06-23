@@ -1,0 +1,223 @@
+/* metal-background - metal background.
+Copyright (C) 2024-2025  Yu Hongbo, CNOCTAVE
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>. */
+.metal-color-text-silver {
+    background-image: -webkit-linear-gradient(90deg, #A9A9A9, #E5E5E5, #A9A9A9);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-darksilver {
+    background-image: -webkit-linear-gradient(90deg, #696969, #A9A9A9, #696969);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-brightsilver {
+    background-image: -webkit-linear-gradient(90deg, #B5B5B5, #F5F5F5, #B5B5B5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-gold {
+    background-image: -webkit-linear-gradient(90deg, #D4AF37, #FFD700, #D4AF37);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-darkgold {
+    background-image: -webkit-linear-gradient(90deg, #996515, #D4AF37, #996515);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-brightgold {
+    background-image: -webkit-linear-gradient(90deg, #FFD700, #FFEC8B, #FFD700);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-bronze {
+    background-image: -webkit-linear-gradient(90deg, #CD7F32, #E6C229, #CD7F32);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-darkbronze {
+    background-image: -webkit-linear-gradient(90deg, #8B4513, #CD7F32, #8B4513);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-brightbronze {
+    background-image: -webkit-linear-gradient(90deg, #E6C229, #F0E68C, #E6C229);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-rosegold {
+    background-image: -webkit-linear-gradient(90deg, #B76E79, #E0BFB8, #B76E79);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-darkrosegold {
+    background-image: -webkit-linear-gradient(90deg, #8B4C5C, #B76E79, #8B4C5C);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-brightrosegold {
+    background-image: -webkit-linear-gradient(90deg, #E0BFB8, #F8E9E6, #E0BFB8);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-titanium {
+    background-image: -webkit-linear-gradient(90deg, #878681, #D1D0CE, #878681);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-darktitanium {
+    background-image: -webkit-linear-gradient(90deg, #555555, #878681, #555555);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-brighttitanium {
+    background-image: -webkit-linear-gradient(90deg, #D1D0CE, #F5F5F5, #D1D0CE);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-verdigris {
+    background-image: -webkit-linear-gradient(90deg, #034A35, #079989, #034A35);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-darkverdigris {
+    background-image: -webkit-linear-gradient(90deg, #023024, #034A35, #023024);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-brightverdigris {
+    background-image: -webkit-linear-gradient(90deg, #079989, #7FFFD4, #079989);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-bluevitriol {
+    background-image: -webkit-linear-gradient(90deg, #1E90FF, #00BFFF, #1E90FF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-darkbluevitriol {
+    background-image: -webkit-linear-gradient(90deg, #104E8B, #1E90FF, #104E8B);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.metal-color-text-brightbluevitriol {
+    background-image: -webkit-linear-gradient(90deg, #00BFFF, #87CEFA, #00BFFF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.metal-background-silver {
+    background: -webkit-linear-gradient(90deg, #A9A9A9, #E5E5E5, #A9A9A9);
+}
+
+.metal-background-darksilver {
+    background: -webkit-linear-gradient(90deg, #696969, #A9A9A9, #696969);
+}
+
+.metal-background-brightsilver {
+    background: -webkit-linear-gradient(90deg, #B5B5B5, #F5F5F5, #B5B5B5);
+}
+
+.metal-background-gold {
+    background: -webkit-linear-gradient(90deg, #D4AF37, #FFD700, #D4AF37);
+}
+
+.metal-background-darkgold {
+    background: -webkit-linear-gradient(90deg, #996515, #D4AF37, #996515);
+}
+
+.metal-background-brightgold {
+    background: -webkit-linear-gradient(90deg, #FFD700, #FFEC8B, #FFD700);
+}
+
+.metal-background-bronze {
+    background: -webkit-linear-gradient(90deg, #CD7F32, #E6C229, #CD7F32);
+}
+
+.metal-background-darkbronze {
+    background: -webkit-linear-gradient(90deg, #8B4513, #CD7F32, #8B4513);
+}
+
+.metal-background-brightbronze {
+    background: -webkit-linear-gradient(90deg, #E6C229, #F0E68C, #E6C229);
+}
+
+.metal-background-rosegold {
+    background: -webkit-linear-gradient(90deg, #B76E79, #E0BFB8, #B76E79);
+}
+
+.metal-background-darkrosegold {
+    background: -webkit-linear-gradient(90deg, #8B4C5C, #B76E79, #8B4C5C);
+}
+
+.metal-background-brightrosegold {
+    background: -webkit-linear-gradient(90deg, #E0BFB8, #F8E9E6, #E0BFB8);
+}
+
+.metal-background-titanium {
+    background: -webkit-linear-gradient(90deg, #878681, #D1D0CE, #878681);
+}
+
+.metal-background-darktitanium {
+    background: -webkit-linear-gradient(90deg, #555555, #878681, #555555);
+}
+
+.metal-background-brighttitanium {
+    background: -webkit-linear-gradient(90deg, #D1D0CE, #F5F5F5, #D1D0CE);
+}
+
+.metal-background-verdigris {
+    background: -webkit-linear-gradient(90deg, #034A35, #079989, #034A35);
+}
+
+.metal-background-darkverdigris {
+    background: -webkit-linear-gradient(90deg, #023024, #034A35, #023024);
+}
+
+.metal-background-brightverdigris {
+    background: -webkit-linear-gradient(90deg, #079989, #7FFFD4, #079989);
+}
+
+.metal-background-bluevitriol {
+    background: -webkit-linear-gradient(90deg, #1E90FF, #00BFFF, #1E90FF);
+}
+
+.metal-background-darkbluevitriol {
+    background: -webkit-linear-gradient(90deg, #104E8B, #1E90FF, #104E8B);
+}
+
+.metal-background-brightbluevitriol {
+    background: -webkit-linear-gradient(90deg, #00BFFF, #87CEFA, #00BFFF);
+}

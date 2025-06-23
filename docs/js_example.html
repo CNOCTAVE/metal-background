@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- metal-background - metal background.
+Copyright (C) 2024-2025  Yu Hongbo, CNOCTAVE
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>. -->
+<html>
+
+<head>
+    <title>Metal Background JS Demo</title>
+    <script src="metal-background.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .demo-text {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin: 10px 0;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 5px;
+            margin: 10px 0;
+        }
+
+        .color-cell {
+            height: 30px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Metal Background JS Demo</h1>
+
+    <div class="controls">
+        <button onclick="initRed()">多个色值可以相同</button>
+        <button onclick="removeRed()">移除样式</button>
+        <button onclick="initJet()">多个色值可以不同</button>
+        <button onclick="removeJet()">移除样式</button>
+        <button onclick="initTurbo()">使用默认className</button>
+        <button onclick="initCubehelix()">使用默认className</button>
+        <button onclick="removeStyle()">移除样式</button>
+    </div>
+
+    <div class="color-grid" id="colorPreview"></div>
+
+    <textarea id="cssOutput" readonly></textarea>
+
+    <div class="demo-text" id="demoText">背景效果</div>
+
+    <script>
+        var currentStyle = null;
+        var style1 = null;
+        var style2 = null;
+        const demoText = document.getElementById('demoText');
+        const cssOutput = document.getElementById('cssOutput');
+        const colorPreview = document.getElementById('colorPreview');
+
+        function updateColorPreview(colors) {
+            colorPreview.innerHTML = '';
+            colors.forEach(color => {
+                const cell = document.createElement('div');
+                cell.className = 'color-cell';
+                cell.style.backgroundColor = color;
+                cell.title = color;
+                colorPreview.appendChild(cell);
+            });
+        }
+
+        function initRed() {
+            cssOutput.value = '';
+            style1 = MetalBackground.init([
+                '#81231c', '#81231c', '#81231c'
+            ], 'metal-background-1');
+            style1.addTo(demoText);
+            updateColorPreview(style1.colors);
+        }
+
+        function removeRed() {
+            style1.removeFrom(demoText);
+            colorPreview.innerHTML = '';
+            cssOutput.value = '';
+        }
+
+        function initJet() {
+            cssOutput.value = '';
+            style2 = MetalBackground.init([
+                '#A9A9A9', '#E5E5E5', '#A9A9A9'
+            ], 'metal-background-2');
+            style2.addTo(demoText);
+            updateColorPreview(style2.colors);
+        }
+
+        function removeJet() {
+            style2.removeFrom(demoText);
+            colorPreview.innerHTML = '';
+            cssOutput.value = '';
+        }
+
+        function initTurbo() {
+            cssOutput.value = '';
+            var style4 = MetalBackground.init([
+                '#B76E79', '#E0BFB8', '#B76E79'
+            ]);
+            currentStyle = style4;
+            style4.addTo(demoText);
+            updateColorPreview(style4.colors);
+        }
+
+        function initCubehelix() {
+            cssOutput.value = '';
+            var style5 = MetalBackground.init([
+                '#034A35', '#079989', '#034A35'
+            ]);
+            currentStyle = style5;
+            style5.addTo(demoText);
+            updateColorPreview(style5.colors);
+        }
+
+        function removeStyle() {
+            currentStyle.removeFrom(demoText);
+            colorPreview.innerHTML = '';
+            cssOutput.value = '';
+        }
+
+    </script>
+</body>
+
+</html>
